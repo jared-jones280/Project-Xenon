@@ -1,0 +1,16 @@
+name: RuboCop
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+      - name: Install dependencies
+        run: cd web/Xenon && bundle install
+      - name: RuboCop linting
+        run: cd web/Xenon && bundle exec rake rubocop
