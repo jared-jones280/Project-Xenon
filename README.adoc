@@ -1,0 +1,4 @@
+= Project Xenon
+
+This is a work-in-progress webapp that will enable gamers to find others
+playing the same game as them.
