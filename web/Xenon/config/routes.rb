@@ -1,5 +1,7 @@
-Rails.application.routes.draw do
-  get 'welcome/index'
+# frozen_string_literal: true
 
-  root 'welcome#index'
+Rails.application.routes.draw do
+  get "welcome/index"
+
+  root "welcome#index"
 end
