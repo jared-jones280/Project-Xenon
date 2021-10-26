@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get "welcome/index"
+  get "user/index"
 
-  root "welcome#index"
+  root "user#index"
 end
